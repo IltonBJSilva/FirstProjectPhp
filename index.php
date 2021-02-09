@@ -1,12 +1,13 @@
  <?php 
 //Codigo PHP!
 
-$helloWorld = "Hello World";
-$olaMundo = "Ola mundo";
+$helloWorld = ['H','','e','','l','','o'];
+$string = '';
 
-echo $helloWorld;
-echo '<br>';
-echo $olaMundo;
+for($i = 0; $i < count($helloWorld); $i++){
+	$string.=$helloWorld[$i];
+}
 
+echo $string;
 
  ?>
