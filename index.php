@@ -25,8 +25,16 @@ if(isset($_POST['acao'])){
 
 	//primeiro valor e oque quero verificar haystack e  osegundo e onde, ou seja, na variavel email
 	if(strstr($email, '@') != ''){
-		echo "É um email valido: ",$email;
+		echo "É um email validox: ",$email;
 		echo "<br>";
+
+		if(strstr($email,'gmail') != ''){
+			echo("e gmail");
+			echo("<br>");
+		}else{
+			echo "não e gmail";
+			echo("<br>");
+		}
 
 	}
 	
