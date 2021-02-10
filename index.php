@@ -1,28 +1,14 @@
 <?php 
-//2 ARRAYS E VAMOS VERIFICAR OS NÚMEROS EM COMUM.
 
-$array = array('Ilton', 'Marcos', 'Vinicius', 'Ilton', 'Claudio','Kesley');
-$arrayRepetido = array();
 
-// Rodar um loop para verificar os valores repetidos dentro do array
-for($i = 0; $i < count($array); $i++){
-	$valorAtual = $array[$i];
-	if(!isset($arrayRepetido[$valorAtual])){
-		$arrayRepetido[$valorAtual] = 0;
-	} else {
-		# code...
-		$arrayRepetido[$valorAtual]++;
-	}
+//Preencher array sem número repetidos.
+$arr = [];
 
-	foreach ($arrayRepetido as $key => $value) {
-		# code...
-		echo $key;
-		echo $value;
-		echo "<hr>";
-	}
+for($i = 0; $i < 5; $i++){
+	//gerar um numero aleatorio entre 1 e 5
+	$arr[$i] = rand(1,20);
+	echo $arr[$i];
+	echo "<br>";
 }
-
-
-
 
 ?>
